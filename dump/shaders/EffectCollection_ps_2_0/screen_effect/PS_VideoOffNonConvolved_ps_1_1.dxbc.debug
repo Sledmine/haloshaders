@@ -1,0 +1,11 @@
+    ps_1_1
+    tex t0
+    mov r0.xyz, t0
+  + mov r0.w, c0.w
+
+// approximately 2 instruction slots used (1 texture, 1 arithmetic)
+
+
+// 0000:  ffff0101  00000042  b00f0000  00000001  ....B_____...___
+// 0010:  80070000  b0e40000  40000001  80080000  __..__...__@__..
+// 0020:  a0ff0000  0000ffff                      __....__
